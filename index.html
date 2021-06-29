@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dojo Weather</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="nav">
+            <div>
+                <h1>Dojo Weather</h1>
+            </div>
+            <div id="nav-items">
+                <ul>
+                    <li onclick="city()"><a href="#">Burbank</a></li>
+                    <li onclick="city()"><a href="#">Chicago</a></li>
+                    <li onclick="city()"><a href="#">Dallas</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-container">
+            <div id="information">
+                <h2>San Jose</h2>
+                <div>
+                    <p>show temperature in <select id="temperature" onclick="convertToFahrenheit(); convertToCelcius()">
+                            <option value="celcius">°C</option>
+                            <option value="fahrenheit">°F</option>
+                        </select></p>
+                </div>
+            </div>
+            <div id="weather-main">
+                <div class="weather-flex">
+                    <h3>Today</h3>
+                    <img src="images/some_rain.png">
+                    <p>some rain</p>
+                    <div class="temperature-flex">
+                        <p class="temp1" id="day1temp1">24°</p>
+                        <p class="temp2" id="day1temp2">18°</p>
+                    </div>
+                </div>
+                <div class="weather-flex">
+                    <h3>Tomorrow</h3>
+                    <img src="images/some_sun.png">
+                    <p>some sun</p>
+                    <div class="temperature-flex">
+                        <p class="temp1">27°</p>
+                        <p class="temp2">19°</p>
+                    </div>
+                </div>
+                <div class="weather-flex">
+                    <h3>Friday</h3>
+                    <img src="images/some_clouds.png">
+                    <p>some clouds</p>
+                    <div class="temperature-flex">
+                        <p class="temp1">21°</p>
+                        <p class="temp2">16°</p>
+                    </div>
+                </div>
+                <div class="weather-flex">
+                    <h3>Saturday</h3>
+                    <img src="images/some_sun.png">
+                    <p>some sun</p>
+                    <div class="temperature-flex">
+                        <p class="temp1">26°</p>
+                        <p class="temp2">21°</p>
+                    </div>
+                </div>
+            </div>
+            <div id="cookie">
+                <img src="images/cookie.png" id="cookie-img">
+                <div id="cookie-text">
+                    <h3>Stop! Cookie time</h3>
+                    <p>We use cookies(sadly not the edible ones) to personalize content and ads, to provide social
+                        media
+                        features and to analyse our traffic. <a href="#" id="cookie-link">Read more...</a>
+                    </p>
+                </div>
+                <button id="cookie-btn" onclick="acceptCookie()">I Accept</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
